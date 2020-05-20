@@ -1,5 +1,6 @@
 1. Download GIT GUI 
    At MBIE this is available from ICT as a self Service download.
+	[UPDATE - THE MBIE VERSION IS UNABLE TO WORK WITH SUB-DIRECTORIES - SUGGEST USE OWN DEVICE FROM HOME!!!]
 
 2. Clone Repository
    Assuming the repository already exists: clone the repository to your own device:
