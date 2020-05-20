@@ -54,7 +54,7 @@ public class AV02MainClass {
               
         // Log in
         driver.findElement(By.name("email")).sendKeys("Henry.Buck@qualit.co.nz");
-        driver.findElement(By.name("password")).sendKeys("Autotest123");
+        driver.findElement(By.name("password")).sendKeys("*********");
         driver.findElement(By.xpath("//*[@class='form-control btn btn-primary']")).click();
         System.out.println("Logged in\n");
         Thread.sleep(5000);
