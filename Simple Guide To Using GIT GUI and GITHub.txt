@@ -1,0 +1,39 @@
+1. Download GIT GUI 
+   At MBIE this is available from ICT as a self Service download.
+
+2. Clone Repository
+   Assuming the repository already exists: clone the repository to your own device:
+   Select Link - Clone Existing Repository
+   Source Location = Repository URL from GitHub (get from the green clone or download button on GitHub)
+   Target Directory = where you want to copy the stuff to locally
+   (no need to change any default settings)
+   Close GitGUI
+
+3.  Copy any changed files to the cloned directory
+
+4.  Git Gui
+    Click Link - Open Recent Repository
+    There will be a list of Unstaged Changes
+    Click Stage Changed
+       Add a commit Message
+    Click Sign Off
+    Click Commit (registers changes with local repository)
+    Click Push (moves changed files to the GitHub Repository)
+       if this button does not work:
+       use menu item - Remote / Push
+       push master to origin
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
