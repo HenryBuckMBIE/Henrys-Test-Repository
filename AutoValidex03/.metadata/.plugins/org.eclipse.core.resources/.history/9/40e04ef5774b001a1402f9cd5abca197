@@ -1,0 +1,16 @@
+package ValidationPackage;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class ValidationPage {
+
+	public static WebElement UploadFile(WebDriver driver) {
+
+		 WebElement element = driver.findElement(By.xpath("//*[@id='fileupload']"));
+			return element;
+		
+	}
+
+}

@@ -1,0 +1,61 @@
+package ValidationPackage;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+public class TheMainClass {
+
+	public static void main(String[] args) {
+		
+		String fileName = "filename";
+		String fullPath = "thefullpath";
+
+		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\Cromedriver\\chromedriver_win32\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		
+		//Log in Page 
+        driver.get("https://aunz.validex.net/en/login");
+        driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+        driver.manage().window().maximize();
+        
+        LoginPage.headerPopUp(driver).click();
+        LoginPage.CookiePopUp(driver).click();
+        LoginPage.LoginEmail(driver).sendKeys("Henry.Buck@qualit.co.nz");
+        LoginPage.LoginPassword(driver).sendKeys("Autotest123");
+        LoginPage.LoginButton(driver).click();
+        
+        // Validation Page - Select a file to upload & Validate
+        
+     // Open List of Files to be tested
+        try {
+			FileInputStream fis = new FileInputStream("C:\\e-Invoice\\Automation_Project\\TestFiles\\TestFileList.txt");
+			Scanner sc = new Scanner(fis);
+			System.out.println("File List Located\n");
+			// File Read
+			while (sc.hasNextLine()) {
+				System.out.println("Reading Next Line");
+	        	fileName=sc.nextLine();
+	        	System.out.println("Filename = " + fileName);
+	        	fullPath = "C:\\e-Invoice\\Automation_Project\\TestFiles\\" + fileName;
+				// Test the File
+	        	ValidationPage.UploadFile.sendKeys(fullPath);
+	        	
+
+			}	
+			sc.close();
+		} catch (FileNotFoundException e) {
+			System.out.println("could not find Test File List\n");
+			driver.quit();
+	        }
+		
+        
+	}
+}

@@ -2,10 +2,9 @@
 <Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
     xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
     xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
-    <cbc:CustomizationID>RANDOM_STUFF_HERE</cbc:CustomizationID>
+    <cbc:CustomizationID>urn:cen.eu:en16931:2017#conformant#urn:fdc:peppol.eu:2017:poacc:billing:international:aunz:3.0</cbc:CustomizationID>
     <cbc:ProfileID>urn:fdc:peppol.eu:2017:poacc:billing:01:1.0</cbc:ProfileID>
 
-    <cbc:ID>Snippet1</cbc:ID>
     <cbc:IssueDate>2019-07-10</cbc:IssueDate>  
     <cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
     <cbc:DocumentCurrencyCode>NZD</cbc:DocumentCurrencyCode>
@@ -13,7 +12,7 @@
 
     <cac:AccountingSupplierParty>
         <cac:Party>
-            <cbc:EndpointID schemeID="0088">9482348239847239874</cbc:EndpointID>
+            <cbc:EndpointID schemeID="0088">9429033591476</cbc:EndpointID>
             <cac:PartyIdentification>
                 <cbc:ID>99887766</cbc:ID>
             </cac:PartyIdentification>
@@ -23,14 +22,14 @@
                 </cac:Country>
             </cac:PostalAddress>
             <cac:PartyTaxScheme>
-                <cbc:CompanyID>NZBN5625672467</cbc:CompanyID>
+                <cbc:CompanyID>9429033591476</cbc:CompanyID>
                 <cac:TaxScheme>
                     <cbc:ID>GST</cbc:ID>
                 </cac:TaxScheme>
             </cac:PartyTaxScheme>
             <cac:PartyLegalEntity>
                 <cbc:RegistrationName>SupplierOfficialName Ltd</cbc:RegistrationName>
-                <cbc:CompanyID  schemeID="0088">9429031681230</cbc:CompanyID>
+                <cbc:CompanyID  schemeID="0088">9429033591476</cbc:CompanyID>
                 <cbc:CompanyLegalForm>Partnership</cbc:CompanyLegalForm>
             </cac:PartyLegalEntity>
         </cac:Party>
@@ -40,7 +39,7 @@
 
     <cac:AccountingCustomerParty>
         <cac:Party>
-            <cbc:EndpointID schemeID="0002">FR23342</cbc:EndpointID>
+            <cbc:EndpointID schemeID="0088">9429033591476</cbc:EndpointID>
             <cac:PartyIdentification>
                 <cbc:ID schemeID="0002">FR23342</cbc:ID>
             </cac:PartyIdentification>
@@ -57,7 +56,7 @@
             </cac:PartyTaxScheme>
             <cac:PartyLegalEntity>
                 <cbc:RegistrationName>Buyer Official Name</cbc:RegistrationName>
-                <cbc:CompanyID schemeID="0183">39937423947</cbc:CompanyID>
+                <cbc:CompanyID schemeID="0088">9429033591476</cbc:CompanyID>
             </cac:PartyLegalEntity>  
         </cac:Party>
     </cac:AccountingCustomerParty>
@@ -100,7 +99,7 @@
             <cbc:Description>Description of item</cbc:Description>
             <cbc:Name>item name</cbc:Name>
             <cac:StandardItemIdentification>
-                <cbc:ID schemeID="0088">21382183120983</cbc:ID>
+                <cbc:ID schemeID="0088">9429033591476</cbc:ID>
             </cac:StandardItemIdentification>
             <cac:OriginCountry>
                 <cbc:IdentificationCode>NO</cbc:IdentificationCode>

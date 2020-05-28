@@ -1,0 +1,21 @@
+abc.xyz@qualit.co.nz
+********
+eInvoice
+
+
+*****************************
+     Instructions
+*****************************
+
+Line 1 = user email address (Validex log in)
+Line 2 = password
+Line 3 = Set as follows:
+         eInvoice , if testing AUNZ Schematron
+         PINT     , if testing PEPPOL International Invoice
+
+{currently hard coded}
+Line 4 = Location of Test Files
+         This has currently been hard coded
+         expected as follows:
+	  AUNZ e-Invoice   testFileLocation = "C:\\e-Invoice\\Automation_Project\\TestFiles\\TestFileList.txt";
+	  PINT  AUNZ e-Invoice   testFileLocation = "C:\\e-Invoice\\Automation_Project\\TestFiles\\TestFileList.txt";
